@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RaceGame</string>
+    <string name="start">Start</string>
+    <string name="ready">Now you can look at results\nin /files/test/results.txt</string>
+</resources>
