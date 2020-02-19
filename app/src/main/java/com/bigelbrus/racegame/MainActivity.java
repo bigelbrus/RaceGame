@@ -51,10 +51,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     static class RaceParticipant extends Thread {
-        private String threadName;
 
         RaceParticipant(String threadName) {
-            this.threadName = threadName;
+            super(threadName);
         }
 
         @Override
@@ -76,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         private void write(String s) throws IOException {
-                writer.write(threadName + " " + s + "\n");
+                writer.write(getName() + " " + s + "\n");
         }
     }
 }
